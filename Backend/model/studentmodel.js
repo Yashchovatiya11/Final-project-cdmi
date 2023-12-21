@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 //schema 
 
-<<<<<<< HEAD
+
 var student_schema = new mongoose.Schema({
 
     name: {
@@ -27,53 +27,43 @@ var student_schema = new mongoose.Schema({
         type: String
     },
     qualification: {
-        type: String
+        type: String,
+        default : "BCA"
     },
     photo: {
         type: String
     },
-    c_name: {
-        type: String
+    c_name : {
+        type : String,
     },
     content_id : {
         type: mongoose.Schema.Types.ObjectId,
         ref: "course_content"
+    },
+    pc_laptop : {
+        type : String,    
+        dafault : "PC"
+    },
+    instollment : {
+        type : Number,
+        
+    },
+    time : {
+        type : Number
+    },
+    startdate : {
+        type : Date,
+        dafault : Date.now()
+    },
+    enddate : {
+        type : Date
+    },
+    facultyname : {
+        type : String
     }
+
 
 });
-=======
-var student_schema = new mongoose.Schema ({
-
-    name : {
-        type : String
-    },
-    surname : {
-        type : String
-    },
-    lastname : {
-        type : String
-    },
-    contact_no : {
-        type : Number
-    },
-    wp_no : {
-        type : Number
-    },
-    parents_no : {
-        type : Number
-    },
-    address : {
-        type : String
-    },
-    qualification : {
-        type : String
-    },
-    photo : {
-        type : String
-    }
-
-})
->>>>>>> cc1c8ff37929a7c7a72534f5e849f8fce6e96c56
 
 // module
 

@@ -9,10 +9,7 @@ var usersRouter = require('./routes/users');
 var courseRouter = require('./routes/course');
 var course_contentRouter = require('./routes/course_content');
 var studentRouter = require('./routes/student');
-<<<<<<< HEAD
-// var facultyRouter = require('./routes/faculty');
-=======
->>>>>>> cc1c8ff37929a7c7a72534f5e849f8fce6e96c56
+var facultyRouter = require('./routes/faculty');
 
 var app = express();
 
@@ -31,10 +28,7 @@ app.use('/users', usersRouter);
 app.use('/course', courseRouter);
 app.use('/course_content', course_contentRouter);
 app.use('/student', studentRouter);
-<<<<<<< HEAD
-// app.use('/faculty', facultyRouter);
-=======
->>>>>>> cc1c8ff37929a7c7a72534f5e849f8fce6e96c56
+app.use('/faculty', facultyRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
