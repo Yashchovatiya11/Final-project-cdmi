@@ -12,7 +12,7 @@ var faculty_schema = new mongoose.Schema({
         type: String
     },
     time: {
-        type: Number
+        type: String
     }
 });
 

@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 //schema 
 
 
+
 var student_schema = new mongoose.Schema({
 
     name: {
@@ -45,8 +46,7 @@ var student_schema = new mongoose.Schema({
         dafault : "PC"
     },
     instollment : {
-        type : Number,
-        
+        type : Array
     },
     time : {
         type : Number
